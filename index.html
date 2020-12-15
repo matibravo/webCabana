@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabañas Pichilemu</title>
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+    <!--CUSTOM CSS-->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header id="Inicio">
+        <div class="nav_left">
+            <a href="#Inicio"><img src="./images/logo.png"></a>
+        </div>
+        <div class="menu">        
+            <img src="./images/menu.svg" alt="Imagen para abrir menu">
+        </div>
+        <div class="menu-screen">
+            <nav>                        
+                <a href="#Inicio">Inicio</a>
+                <a href="#Galeria">Galeria</a>
+                <a href="#Mapa">Ubicación</a>
+                <a href="#Contacto">Contacto</a>                  
+            </nav> 
+        </div>  
+    </header>  
+    <section>
+        <div class="grid">
+            <div class="texto">
+                <h1> Cabañas Pichilemu</h1> 
+                <p>Ofrecemos a nuestros veraniantes distintos tipos de cabañas para venir a disfrutar en pareja, amigos o en familia.</p>
+                <br/>
+                <hr>
+                <br/>
+                <p>No es necesario esperar la temporada de verano, estamos atendiendo durante todo el año, queda cordialmente invitado.</p>
+            </div>
+            <div class="imagen">
+                <img src="./images/img_2.jpg" alt="Cabañas Pichilemu">
+            </div>
+        </div>
+    </section>
+    
+    <section >
+        <div class="cover parallax">
+            <p class="parrafoCoverParallax">
+                Cabañas Pichilemu
+                <span>Ven y disfruta unas merecidas vacaciones.</span>
+            </p>
+        </div>		
+	</section>
+	<section id="Galeria">
+        <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <img src="./images/cabana1.jpg" >
+              <div class="text">Cabañas Pichilemu</div>
+            </div>
+    
+            <div class="mySlides fade">
+              <img src="./images/cabana2.jpg">
+              <div class="text">Living</div>
+            </div>
+    
+            <div class="mySlides fade">
+              <img src="./images/cabana3.jpg" >
+              <div class="text">Dormitorio</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./images/cabana4.jpg" >
+                <div class="text">Cocina americana</div>
+            </div>  
+        </div> 	
+    </section>
+    
+	<section id="Mapa">
+        <div class="grid">
+            <div class="texto">
+                <h2>Encuentranos: </h2>
+                <p> Mirador Playa Infiernillo #123, ¡te esperamos!</p>
+                <br/>
+                <hr>
+                <br/>
+                <h2>Horario de atención: </h2>
+                <p> Lunes a domingo de 09:00hrs a 18:00hrs </p>
+                <br/>
+                <hr>
+                <br/>
+                <h2>Fono contacto: </h2>
+                <p> +569 12345678 ó +569 87654321 </p> 
+            </div>
+            <div class="imagen">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3292.3325046169593!2d-72.02753028255613!3d-34.3928936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96615723eb410399%3A0x7533e18b3c052ad3!2sMirador%20Playa%20Infiernillo!5e0!3m2!1ses-419!2scl!4v1607451014503!5m2!1ses-419!2scl" width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>	
+            </div>
+        </div>    
+    </section>
+    
+	<section id="Contacto">
+        <div class="container">
+            <h2>Formulario de Contacto:</h2>
+            <form action="#" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" name="name" id="" required>
+                <label for="email">Correo:</label>
+                <input type="email" name="email" id="" required>
+                <label for="phone">Teléfono:</label>
+                <input type="number" name="phone" id="">
+                <label for="comments">Comentarios:</label>
+                <textarea name="commments" id="" cols="30" rows="10" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>		
+	</section>
+	<footer>    
+        <p> © 2020 sitio web realizado por:             
+        <a href="http://cl.linkedin.com/pub/matias-bravo-castro/6a/3a3/98a" target="_blank" rel="noopener noreferrer">Matías Bravo</a>
+        </p>	        
+	</footer>
+<script src="./js/main.js"></script>
+<script src="./js/slides.js"></script>
+</body>
+</html>

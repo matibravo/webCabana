@@ -1,0 +1,371 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 1.5em;
+	color: gray;
+}
+
+img{
+	width: 100%;
+}
+
+a{
+	text-decoration: none;
+	padding: 20px;
+	
+}
+
+h1, h2{
+	font-size: 2em;
+	margin-bottom: 40px;
+	color: teal; 
+	line-height: 1.2em;
+	
+}
+
+hr{
+	background-color: #3fb9be;
+	
+}
+
+span{
+	font-size: 0.6em;
+	color: gray;
+}
+
+
+
+
+/*menu de navegación*/
+
+header{
+	background-color: teal;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 15vh;
+	margin-bottom: 60px;
+}
+
+header .menu {
+	display: none;
+}
+
+
+
+.nav_left{
+	margin-left: 20px;
+	padding: 20px;
+}
+
+.nav_left img{
+	width: 90px;
+	padding: 10px;
+	margin: 10px;
+	
+}
+
+.menu-screen nav a{
+	margin-right: 20px;
+	padding: 20px;
+}
+
+.menu-screen nav a{
+	color: white;
+	font-weight: bolder;
+}
+
+.menu-screen nav a:hover{
+	background-color: rgba(0, 180, 180, 0.8);
+	border-radius: 4px;
+}
+
+/*efecto parallax*/
+
+.cover{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	min-height: 500px;
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 80px;
+}
+
+.parallax{
+	background-attachment: fixed;
+	background-image: url(../images/img_1.jpg);
+	position: relative;
+}
+
+.parrafoCoverParallax {
+	font-size: 1.8em;
+	padding: 10px 15px;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    letter-spacing: 5px;
+    z-index: 10;
+    text-align: center; 
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(44, 62, 80, .8);
+    display: block;
+    width: 100%;
+    box-sizing: border-box;  /*permite que no existe un desborde*/
+    left: 0px;
+    text-align: center;
+}
+
+.parrafoCoverParallax span {
+    display: block;
+    font-size: 0.5em;
+    font-weight: 200;
+    margin-top: 6px;
+}
+
+/*FIN efecto parallax*/
+
+/*grid Nosotros*/
+.grid{
+	display: grid;
+	grid-template-columns: repeat(12,1fr);
+	margin-bottom: 80px;
+}
+
+.texto{
+	grid-column: 2 / 6;
+	line-height: 1.5em;
+	text-align: center;
+}
+
+.imagen{
+	grid-column: 7 / 12;
+}
+
+/*fin grid*/
+
+/*SLIDER*/
+
+.slideshow-container { 
+	max-width: 1100px;
+	position: relative;
+	margin: auto;
+	margin-bottom: 80px;
+  }
+
+  /*ocultar las imagenes por default*/
+.mySlides {
+	display: none;
+}  
+
+.mySlides img{
+	height: 80vh;
+	object-fit:cover;
+}
+
+/* Caption text */
+.text {
+	color: #f2f2f2;
+	font-size: 1em;
+	font-weight: bolder;
+	text-decoration: underline;
+	padding: 12px;
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	text-align: center;
+  }
+ 
+  /* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+  }
+  
+@-webkit-keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+  }
+  
+@keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+  }  
+
+/*FIN SLIDER*/
+
+/*form*/
+
+ /* Style the container */
+.container {
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+
+/* Style inputs, select elements and textareas */
+input[type=text], input[type=email], input[type=number], textarea{
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	resize: vertical;
+	margin-bottom: 35px;
+  }
+  
+  /* Style the label to display next to the inputs */
+  label {
+	padding: 12px 12px 12px 0;
+	display: inline-block;
+  }
+  
+  /* Style the submit button */
+  button[type=submit] {
+	background-color:  teal;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	width: 100%;
+	margin-bottom: 35px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 0.9em;	
+  }
+
+  button[type=submit]:hover {
+	background-color: #3fb9be;
+
+	 
+  }
+
+/*form*/
+
+/*footer*/
+footer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: gray;
+	height: 10vh;
+}
+
+footer p{
+	color: white;
+	font-size: 0.8em;
+}
+footer a{
+	padding: 0;
+	text-decoration: none;
+	color: white;
+}
+/*fin footer*/
+
+/*CELULAR*/
+
+@media (max-width: 420px){
+
+	.grid{
+		margin-top: 2em;
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+	}
+
+	.texto{
+		grid-column: 2 / 6;
+		text-align: center;
+		margin-bottom: 80px;
+	}
+	
+	.imagen{
+		grid-column: 1 / 7;
+	}
+	
+	/*menu*/
+	header{
+		background-color: teal;
+		height: 15vh;
+	}
+
+	nav{
+		display: block;	
+		
+	}
+
+	.nav_left a img{
+		height: 90px;
+		width: 90px;
+	}
+
+	header .menu{
+		padding: 10px;
+		position: fixed;
+		top: 1em;
+		right: 2em;
+		height: 60px;
+		width: 60px;
+		border-radius: 50%;
+		border: 1px solid black;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+
+
+	.menu:hover{
+		background-color: teal;
+		cursor: pointer;
+	}
+
+	.menu-screen{
+		background-color: white;
+		height: 100vh;
+		top: -101vh;  /*para q se oculte el menu*/
+		width: 100vw;
+		position: fixed;
+		z-index: 100;  /*para que se vea encima de todo*/
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: teal
+	}
+	.active {  /*la clase active hace q nuestro menu se vuelva a visualizar*/
+		top: 0px;
+	}
+
+	.menu-screen .close{
+		position: fixed;
+	}
+	
+	.menu-screen a{
+		display: block;
+		text-decoration: none;
+		position: relative;
+		text-align: center;
+		color: white;
+	}
+	
+	.menu-screen a:hover{
+		background-color: white;
+		color: teal;
+	}
+	
+	
+
+	}
+
+
+
+
+
