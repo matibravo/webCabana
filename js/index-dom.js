@@ -4,7 +4,8 @@ import slider from "./slider.js";
 import validacionForm from "./validacionForm.js";
 
 
-document.addEventListener("DOMContentLoaded", (e)=>{    
+document.addEventListener("DOMContentLoaded", (e)=>{  
+    console.log("Hola soy matías xD");  
     menuHamburguer("#btn-menu", ".menu", ".menu a");
     menuTab();
     slider();
