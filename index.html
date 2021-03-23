@@ -9,34 +9,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
     <!--CUSTOM CSS-->
     <link rel="stylesheet" href="./css/main.css">
+    <!--libreri hamburguer-->
+    <!--ESTILOS HAMBURGER -->
+    <link rel="stylesheet" href="./css/hamburguer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
-    <header id="Inicio">
-        <div class="nav_left">
-            <a href="#Inicio"><img src="./images/logo.png"></a>
-        </div>
-        <div class="menu">        
-            <img src="./images/menu.svg" alt="Imagen para abrir menu">
-        </div>
-        <div class="menu-screen">
-            <nav>                        
+    <button id="btn-menu" class="panel-btn hamburger hamburger--vortex " type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+    </button>
+    <section id="Inicio">
+    <header class="heroe-img">
+        <div class="cover parallax">
+            <p class="parrafoCoverParallax">
+                Cabañas Pichilemu
+                <span>Ven y disfruta unas merecidas vacaciones.</span>
+            </p>
+            <nav class="menu ocultar">                        
                 <a href="#Inicio">Inicio</a>
-                <a href="#Galeria">Galeria</a>
+                <a href="#Nosotros">Nosotros</a>
+                <a href="#Cabañas">Cabañas</a>
                 <a href="#Mapa">Ubicación</a>
                 <a href="#Contacto">Contacto</a>                  
             </nav> 
-        </div>  
-    </header>  
-    <section>
+        </div>
+    </header>
+    </section>
+
+    <section id="Nosotros">
         <div class="grid">
             <div class="texto">
                 <h1> Cabañas Pichilemu</h1> 
-                <p>Ofrecemos a nuestros veraniantes distintos tipos de cabañas para venir a disfrutar en pareja, amigos o en familia.</p>
-                <br/>
-                <hr>
-                <br/>
+                <p>Ofrecemos a nuestros veraneantes distintos tipos de cabañas para venir a disfrutar en pareja, amigos o en familia.</p><br>
                 <p>No es necesario esperar la temporada de verano, estamos atendiendo durante todo el año, queda cordialmente invitado.</p>
             </div>
             <div class="imagen">
@@ -44,53 +51,85 @@
             </div>
         </div>
     </section>
-    
-    <section >
-        <div class="cover parallax">
-            <p class="parrafoCoverParallax">
-                Cabañas Pichilemu
-                <span>Ven y disfruta unas merecidas vacaciones.</span>
-            </p>
-        </div>		
-	</section>
-	<section id="Galeria">
-        <div class="slideshow-container">
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-              <img src="./images/cabana1.jpg" >
-              <div class="text">Cabañas Pichilemu</div>
-            </div>
-    
-            <div class="mySlides fade">
-              <img src="./images/cabana2.jpg">
-              <div class="text">Living</div>
-            </div>
-    
-            <div class="mySlides fade">
-              <img src="./images/cabana3.jpg" >
-              <div class="text">Dormitorio</div>
-            </div>
 
-            <div class="mySlides fade">
-                <img src="./images/cabana4.jpg" >
-                <div class="text">Cocina americana</div>
-            </div>  
-        </div> 	
+    <section id="Cabañas">        
+        <div class="container">  
+            <h2>Cabañas</h2>
+            <p>Contamos con cabañas para 2 y hasta 6 personas.</p> <br>             
+            <div class="container-sliders">
+                <div class="container-slider is-active">
+                    <img src="./images/cabanaPa2.jpg" alt="Cabaña para 2 personas">
+                </div>
+                <div class="container-slider">
+                    <img src="./images/cabana3.jpg" alt="Cabaña para 2 personas">
+                </div>
+                <div class="container-slider">
+                    <img src="./images/cabanaPa5.jpg" alt="Cabaña para 2 personas">
+                </div>
+                <div class="container-slider">
+                    <img src="./images/cabana2.jpg" alt="Cabaña para 2 personas">
+                </div>
+                <div class="container-slider">
+                    <img src="./images/cabana4.jpg" alt="Cabaña para 2 personas">
+                </div>
+                <div class="container-slider">
+                    <img src="./images/cabana5.jpg" alt="Cabaña para 2 personas">
+                </div>
+            </div>
+            <div class="contenedor-btns">    
+                <a id="prev" href="#" class="prev">&#9668;</a>    
+                <a id="next" href="#" class="next">&#9658;</a>            
+            </div>           
+        </div>
+        <div class="informacion">
+            <!-- Tab links -->
+            <div class="tab">
+                <button class="tablinks" id="btn-servicios">Servicios</button>
+                <button class="tablinks" id="btn-horarios">Horarios</button>
+                <button class="tablinks" id="btn-detalle">Detalle</button>
+            </div>
+        
+            <!-- Tab content -->
+            <div id="servicio" class="tabcontent ">
+                <ul>
+                    <li>Equipamiento de cabaña.</li>
+                    <li>Calefacción.</li>
+                    <li>Estacionamiento.</li>
+                    <li>Quincho / Parrillas.</li>
+                    <li>Se permiten mascota.</li>
+                    <li>Clases de Surf (opcional).</li>
+                    <li>TV Satelital.</li>
+                </ul>
+            </div>
+        
+            <div id="horario" class="tabcontent ">
+                <ul>
+                    <li>Ingresos: de lunes a domingos de 9:00hrs hasta las 17:00hrs</li>
+                    <li>Salidas: de lunes a domingos de 9:00hrs hasta las 15:00hrs</li>
+                </ul>
+            </div>
+        
+            <div id="detalle" class="tabcontent is-active">
+                <ul>
+                    <li>Mínimo dos noches de arriendo.</li>
+                    <li>No se acepta que en la cabaña se alojen mas personas que la capacidad máxima de esta. “En caso de encontrarse más pasajeros de los permitidos en la cabaña, se cobrará un monto extra que asciende a la suma de $20.000 por noche” .</li>
+                    <li>Todos los fines de semana festivos se cobran con valor de temporada alta.</li>
+                    <li>Al solicitar devolución de una reserva, se devolverá sólo el 50% de lo cancelado, avisando con un mínimo de 5 días de anticipación a la fecha del comienzo del período reservado.</li>
+                    <li>Las ofertas que tengamos simultáneamente no son acumulables.</li>                    
+                </ul>
+            </div>	
+        </div>   
     </section>
+
+
     
 	<section id="Mapa">
         <div class="grid">
             <div class="texto">
                 <h2>Encuentranos: </h2>
-                <p> Mirador Playa Infiernillo #123, ¡te esperamos!</p>
-                <br/>
-                <hr>
-                <br/>
+                <p> Mirador Playa Infiernillo #123, ¡te esperamos!</p>                
                 <h2>Horario de atención: </h2>
-                <p> Lunes a domingo de 09:00hrs a 18:00hrs </p>
-                <br/>
-                <hr>
-                <br/>
+                <p> Lunes a domingo de 09:00hrs a 18:00hrs </p>                
                 <h2>Fono contacto: </h2>
                 <p> +569 12345678 ó +569 87654321 </p> 
             </div>
@@ -101,18 +140,26 @@
     </section>
     
 	<section id="Contacto">
-        <div class="container">
+        <div class="form">
             <h2>Formulario de Contacto:</h2>
-            <form action="#" method="post">
+            <form id="formContact">
                 <label for="name">Nombre:</label>
-                <input type="text" name="name" id="" required>
+                <input type="text" name="name" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="El nombre debe contener letras." required>
                 <label for="email">Correo:</label>
-                <input type="email" name="email" id="" required>
+                <input type="email" name="email" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" title="Ingresa un correo válido" required>
                 <label for="phone">Teléfono:</label>
-                <input type="number" name="phone" id="">
+                <input type="number" name="phone" pattern="^[0-9]{9}$" title="Debe ingresar los 9 dígitos de su telefono móvil" required>
+                <label for="Asunto">Asunto:</label>
+                <input type="text" name="asunto" title="El asunto es requerido" required>
                 <label for="comments">Comentarios:</label>
-                <textarea name="commments" id="" cols="30" rows="10" required></textarea>
+                <textarea name="commments" data-pattern="^.{1,250}$" title="Tú comentario no puede exceder los 250 carácteres." cols="30" rows="10" required></textarea>
                 <button type="submit">Enviar</button>
+                <div class="contact-form-loader none ">
+                    <img src="./images/puff.svg" alt="Cargando">
+                </div>
+                <div class="respuesta none">
+                    <p>Los datos han sido enviados.</p>
+                </div>
             </form>
         </div>		
 	</section>
@@ -121,7 +168,8 @@
         <a href="http://cl.linkedin.com/pub/matias-bravo-castro/6a/3a3/98a" target="_blank" rel="noopener noreferrer">Matías Bravo</a>
         </p>	        
 	</footer>
-<script src="./js/main.js"></script>
-<script src="./js/slides.js"></script>
+<!--<script src="./js/main.js"></script>-->
+<script src="./js/index-dom.js" type="module"></script>
+<!--<script src="./js/slides.js"></script>-->
 </body>
 </html>
