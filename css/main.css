@@ -388,80 +388,8 @@ footer a{
 		grid-column: 1 / 7;
 	}
 	
-	/*menu*/
-	header{
-		background-color: teal;
-		height: 15vh;
-	}
-
-	nav{
-		display: block;	
-		
-	}
-
-	.nav_left a img{
-		height: 90px;
-		width: 90px;
-	}
-
-	header .menu{
-		padding: 10px;
-		position: fixed;
-		top: 1em;
-		right: 2em;
-		height: 60px;
-		width: 60px;
-		border-radius: 50%;
-		border: 1px solid black;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-
-
-
-	.menu:hover{
-		background-color: teal;
-		cursor: pointer;
-	}
-
-	.menu-screen{
-		background-color: white;
-		height: 100vh;
-		top: -101vh;  /*para q se oculte el menu*/
-		width: 100vw;
-		position: fixed;
-		z-index: 100;  /*para que se vea encima de todo*/
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		background-color: teal
-	}
-	.active {  /*la clase active hace q nuestro menu se vuelva a visualizar*/
-		top: 0px;
-	}
-
-	.menu-screen .close{
-		position: fixed;
-	}
-	
-	.menu-screen a{
-		display: block;
-		text-decoration: none;
-		position: relative;
-		text-align: center;
-		color: white;
-	}
-	
-	.menu-screen a:hover{
-		background-color: white;
-		color: teal;
-	}
 	
 	
-
-	}
-
 
 
 
